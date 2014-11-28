@@ -1,0 +1,55 @@
+body,div{
+    margin: 0px;
+    padding: 0px;
+}
+.mainContain{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top:0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+/*page的视图*/
+.page{
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.page:nth-child(1){
+    background: url("../image/1.jpg");
+    background-size: cover;
+}
+.page:nth-child(2){
+    background: url("../image/4.jpg");
+    background-size: cover;
+}
+.page:nth-child(3){
+    background: url("../image/3.jpg") no-repeat;  background-size: cover;
+}
+.page:nth-child(4){
+    background: url("../image/2.jpg");  background-size: cover;
+}
+
+/*3d视图*/
+.mainContain,.peopleContain{
+   -webkit-perspective: 6000px;
+    -ms-perspective:6000px;
+    perspective:60000px;
+    width: 100%;
+    height: 100%;
+}
+.containSub,.peopleBox{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition:all ease-in 1s;
+    transition:all ease-in 1s ;
+    -webkit-webkit-transform-style:preserve-3d;
+    -ms-webkit-transform-style:preserve-3d;
+     transform-style:preserve-3d;
+}
+.peopleContain{
+    opacity: 0.8;
+}
